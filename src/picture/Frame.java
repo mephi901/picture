@@ -27,9 +27,39 @@ public class Frame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        HelloWorldDialog = new javax.swing.JDialog();
+        jHelloLabel1 = new javax.swing.JLabel();
+        jHelloLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
 
+
+        jHelloLabel1.setText("Hello World!");
+
+        jHelloLabel2.setText("Число = ");
+
+        javax.swing.GroupLayout HelloWorldDialogLayout = new javax.swing.GroupLayout(HelloWorldDialog.getContentPane());
+        HelloWorldDialog.getContentPane().setLayout(HelloWorldDialogLayout);
+        HelloWorldDialogLayout.setHorizontalGroup(
+            HelloWorldDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HelloWorldDialogLayout.createSequentialGroup()
+                .addGap(134, 134, 134)
+                .addGroup(HelloWorldDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jHelloLabel2)
+                    .addComponent(jHelloLabel1))
+                .addContainerGap(208, Short.MAX_VALUE))
+        );
+        HelloWorldDialogLayout.setVerticalGroup(
+            HelloWorldDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HelloWorldDialogLayout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jHelloLabel1)
+                .addGap(46, 46, 46)
+                .addComponent(jHelloLabel2)
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
+
         LeftButton = new javax.swing.JButton();
+
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -138,9 +168,15 @@ public class Frame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
 
+    private javax.swing.JDialog HelloWorldDialog;
+    private javax.swing.JLabel jHelloLabel1;
+    private javax.swing.JLabel jHelloLabel2;
+
+
     private javax.swing.JButton LeftButton;
 
     private javax.swing.JLabel jLabel2;
+
 
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
