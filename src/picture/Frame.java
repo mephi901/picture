@@ -31,7 +31,8 @@ public class Frame extends javax.swing.JFrame {
         jHelloLabel1 = new javax.swing.JLabel();
         jHelloLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-
+        jLabel2 = new javax.swing.JLabel();
+        LeftButton = new javax.swing.JButton();
 
         jHelloLabel1.setText("Hello World!");
 
@@ -58,10 +59,9 @@ public class Frame extends javax.swing.JFrame {
                 .addContainerGap(116, Short.MAX_VALUE))
         );
 
-        LeftButton = new javax.swing.JButton();
-
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/MEME.jpg"))); // NOI18N
 
         LeftButton.setText("Левая кнопка");
         LeftButton.addActionListener(new java.awt.event.ActionListener() {
@@ -70,32 +70,18 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
-        jLabel2 = new javax.swing.JLabel();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/MEME.jpg"))); // NOI18N
-
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-
-                .addGap(122, 122, 122)
-                .addComponent(LeftButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(350, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(255, Short.MAX_VALUE)
-                .addComponent(LeftButton, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(124, 124, 124))
-
-                .addGap(146, 146, 146)
-                .addComponent(jLabel2)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addComponent(LeftButton)))
                 .addContainerGap(177, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -103,8 +89,9 @@ public class Frame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
-                .addContainerGap(406, Short.MAX_VALUE))
-
+                .addGap(72, 72, 72)
+                .addComponent(LeftButton)
+                .addContainerGap(309, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -130,7 +117,11 @@ public class Frame extends javax.swing.JFrame {
             HelloWorldDialog.setVisible(true);
         }
     }//GEN-LAST:event_LeftButtonActionPerformed
-
+/*
+    private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+*/
     /**
      * @param args the command line arguments
      */
@@ -167,17 +158,11 @@ public class Frame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-
     private javax.swing.JDialog HelloWorldDialog;
+    private javax.swing.JButton LeftButton;
     private javax.swing.JLabel jHelloLabel1;
     private javax.swing.JLabel jHelloLabel2;
-
-
-    private javax.swing.JButton LeftButton;
-
     private javax.swing.JLabel jLabel2;
-
-
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
