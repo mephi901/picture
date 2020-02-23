@@ -5,6 +5,8 @@
  */
 package picture;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author b17-901
@@ -33,6 +35,8 @@ public class Frame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         LeftButton = new javax.swing.JButton();
+        CenterButton = new javax.swing.JButton();
+        RightButton = new javax.swing.JButton();
 
         jHelloLabel1.setText("Hello World!");
 
@@ -70,6 +74,20 @@ public class Frame extends javax.swing.JFrame {
             }
         });
 
+        CenterButton.setText("Выход");
+        CenterButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CenterButtonActionPerformed(evt);
+            }
+        });
+
+        RightButton.setText("Правая кнопка");
+        RightButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RightButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -81,7 +99,11 @@ public class Frame extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(102, 102, 102)
-                        .addComponent(LeftButton)))
+                        .addComponent(LeftButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CenterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(RightButton)))
                 .addContainerGap(177, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -90,7 +112,10 @@ public class Frame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addGap(72, 72, 72)
-                .addComponent(LeftButton)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LeftButton)
+                    .addComponent(CenterButton)
+                    .addComponent(RightButton))
                 .addContainerGap(309, Short.MAX_VALUE))
         );
 
@@ -122,6 +147,14 @@ public class Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 */
+    private void CenterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CenterButtonActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_CenterButtonActionPerformed
+
+    private void RightButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RightButtonActionPerformed
+        JOptionPane.showMessageDialog(null, "Какой-то текст");
+    }//GEN-LAST:event_RightButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -158,8 +191,10 @@ public class Frame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CenterButton;
     private javax.swing.JDialog HelloWorldDialog;
     private javax.swing.JButton LeftButton;
+    private javax.swing.JButton RightButton;
     private javax.swing.JLabel jHelloLabel1;
     private javax.swing.JLabel jHelloLabel2;
     private javax.swing.JLabel jLabel2;
