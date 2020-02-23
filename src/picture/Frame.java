@@ -27,10 +27,43 @@ public class Frame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+
         jDialogNight = new javax.swing.JDialog();
         jPanelNight = new javax.swing.JPanel();
         jTextFieldNight = new javax.swing.JTextField();
+
+        HelloWorldDialog = new javax.swing.JDialog();
+        jHelloLabel1 = new javax.swing.JLabel();
+        jHelloLabel2 = new javax.swing.JLabel();
+
         jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        LeftButton = new javax.swing.JButton();
+
+        jHelloLabel1.setText("Hello World!");
+
+        jHelloLabel2.setText("Число = ");
+
+        javax.swing.GroupLayout HelloWorldDialogLayout = new javax.swing.GroupLayout(HelloWorldDialog.getContentPane());
+        HelloWorldDialog.getContentPane().setLayout(HelloWorldDialogLayout);
+        HelloWorldDialogLayout.setHorizontalGroup(
+            HelloWorldDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HelloWorldDialogLayout.createSequentialGroup()
+                .addGap(134, 134, 134)
+                .addGroup(HelloWorldDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jHelloLabel2)
+                    .addComponent(jHelloLabel1))
+                .addContainerGap(208, Short.MAX_VALUE))
+        );
+        HelloWorldDialogLayout.setVerticalGroup(
+            HelloWorldDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HelloWorldDialogLayout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jHelloLabel1)
+                .addGap(46, 46, 46)
+                .addComponent(jHelloLabel2)
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
 
         jTextFieldNight.setText("GOOD NIGHT SWEET PRINCE");
         jTextFieldNight.addActionListener(new java.awt.event.ActionListener() {
@@ -75,15 +108,37 @@ public class Frame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/MEME.jpg"))); // NOI18N
+
+        LeftButton.setText("Левая кнопка");
+        LeftButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LeftButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 622, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addComponent(LeftButton)))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 431, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addGap(72, 72, 72)
+                .addComponent(LeftButton)
+                .addContainerGap(309, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -100,9 +155,21 @@ public class Frame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void jTextFieldNightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNightActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldNightActionPerformed
+
+
+    private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeftButtonActionPerformed
+        
+        if (SuperFunc.start()>=1) {
+            jDialogNight.setVisible(true);
+        }
+        else {
+            HelloWorldDialog.setVisible(true);
+        }
+    }//GEN-LAST:event_LeftButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,13 +201,21 @@ public class Frame extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frame().setVisible(true);
+                new Frame().setVisible(true);         
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JDialog jDialogNight;
+
+    private javax.swing.JDialog HelloWorldDialog;
+    private javax.swing.JButton LeftButton;
+    private javax.swing.JLabel jHelloLabel1;
+    private javax.swing.JLabel jHelloLabel2;
+    private javax.swing.JLabel jLabel2;
+
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelNight;
     private javax.swing.JTextField jTextFieldNight;
