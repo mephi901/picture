@@ -27,15 +27,9 @@ public class Frame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-
-        jDialogNight = new javax.swing.JDialog();
-        jPanelNight = new javax.swing.JPanel();
-        jTextFieldNight = new javax.swing.JTextField();
-
         HelloWorldDialog = new javax.swing.JDialog();
         jHelloLabel1 = new javax.swing.JLabel();
         jHelloLabel2 = new javax.swing.JLabel();
-
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         LeftButton = new javax.swing.JButton();
@@ -63,47 +57,6 @@ public class Frame extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addComponent(jHelloLabel2)
                 .addContainerGap(116, Short.MAX_VALUE))
-        );
-
-        jTextFieldNight.setText("GOOD NIGHT SWEET PRINCE");
-        jTextFieldNight.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldNightActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanelNightLayout = new javax.swing.GroupLayout(jPanelNight);
-        jPanelNight.setLayout(jPanelNightLayout);
-        jPanelNightLayout.setHorizontalGroup(
-            jPanelNightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelNightLayout.createSequentialGroup()
-                .addGap(105, 105, 105)
-                .addComponent(jTextFieldNight, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
-        );
-        jPanelNightLayout.setVerticalGroup(
-            jPanelNightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelNightLayout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(jTextFieldNight, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jDialogNightLayout = new javax.swing.GroupLayout(jDialogNight.getContentPane());
-        jDialogNight.getContentPane().setLayout(jDialogNightLayout);
-        jDialogNightLayout.setHorizontalGroup(
-            jDialogNightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialogNightLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanelNight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
-        );
-        jDialogNightLayout.setVerticalGroup(
-            jDialogNightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialogNightLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanelNight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -155,12 +108,6 @@ public class Frame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
-    private void jTextFieldNightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNightActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldNightActionPerformed
-
-
     private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeftButtonActionPerformed
         
         if (SuperFunc.start()>=1) {
@@ -170,7 +117,11 @@ public class Frame extends javax.swing.JFrame {
             HelloWorldDialog.setVisible(true);
         }
     }//GEN-LAST:event_LeftButtonActionPerformed
-
+/*
+    private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+*/
     /**
      * @param args the command line arguments
      */
@@ -207,17 +158,11 @@ public class Frame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-
-    private javax.swing.JDialog jDialogNight;
-
     private javax.swing.JDialog HelloWorldDialog;
     private javax.swing.JButton LeftButton;
     private javax.swing.JLabel jHelloLabel1;
     private javax.swing.JLabel jHelloLabel2;
     private javax.swing.JLabel jLabel2;
-
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanelNight;
-    private javax.swing.JTextField jTextFieldNight;
     // End of variables declaration//GEN-END:variables
 }
