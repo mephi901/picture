@@ -32,6 +32,8 @@ public class Frame extends javax.swing.JFrame {
         HelloWorldDialog = new javax.swing.JDialog();
         jHelloLabel1 = new javax.swing.JLabel();
         jHelloLabel2 = new javax.swing.JLabel();
+        jDialogNight = new javax.swing.JDialog();
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         LeftButton = new javax.swing.JButton();
@@ -61,6 +63,25 @@ public class Frame extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addComponent(jHelloLabel2)
                 .addContainerGap(116, Short.MAX_VALUE))
+        );
+
+        jLabel1.setText("GOOD NIGHT SWEET PRINSE");
+
+        javax.swing.GroupLayout jDialogNightLayout = new javax.swing.GroupLayout(jDialogNight.getContentPane());
+        jDialogNight.getContentPane().setLayout(jDialogNightLayout);
+        jDialogNightLayout.setHorizontalGroup(
+            jDialogNightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogNightLayout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addComponent(jLabel1)
+                .addContainerGap(175, Short.MAX_VALUE))
+        );
+        jDialogNightLayout.setVerticalGroup(
+            jDialogNightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogNightLayout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addComponent(jLabel1)
+                .addContainerGap(181, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -195,8 +216,10 @@ public class Frame extends javax.swing.JFrame {
     private javax.swing.JDialog HelloWorldDialog;
     private javax.swing.JButton LeftButton;
     private javax.swing.JButton RightButton;
+    private javax.swing.JDialog jDialogNight;
     private javax.swing.JLabel jHelloLabel1;
     private javax.swing.JLabel jHelloLabel2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
