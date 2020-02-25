@@ -67,6 +67,9 @@ public class Frame extends javax.swing.JFrame {
                 .addContainerGap(116, Short.MAX_VALUE))
         );
 
+        jDialogNight.setAlwaysOnTop(true);
+        jDialogNight.setBounds(new java.awt.Rectangle(0, 0, 400, 400));
+
         jLabel1.setText("GOOD NIGHT SWEET PRINCE");
 
         jLabel3.setText("Число равно:  ");
@@ -106,7 +109,7 @@ public class Frame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogNightLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
