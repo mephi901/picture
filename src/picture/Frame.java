@@ -5,6 +5,7 @@
  */
 package picture;
 
+import static java.lang.System.exit;
 import javax.swing.JOptionPane;
 
 /**
@@ -202,7 +203,7 @@ public class Frame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 */
     private void CenterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CenterButtonActionPerformed
-       dispose();
+       exit(0);
     }//GEN-LAST:event_CenterButtonActionPerformed
 
     private void RightButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RightButtonActionPerformed
