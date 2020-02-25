@@ -187,7 +187,7 @@ public class Frame extends javax.swing.JFrame {
 
     private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeftButtonActionPerformed
         per = SuperFunc.Start();
-        if (per>=4) {
+        if (per>=1) {
             jDialogNight.setVisible(true);
             jLabel3.setText("Число = "+per);
         
