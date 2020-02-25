@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package picture;
+
+import org.apache.commons.math3.distribution.*;
+
 
 /**
  *
  * @author b17-901
  */
 public class SuperFunc {
-    
+   public static double r;
+ 
+    public  static double Start(){
+         WeibullDistribution W =new WeibullDistribution(3,5);
+        return r=W.sample();
+       
+    }
+
 }

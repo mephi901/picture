@@ -155,12 +155,15 @@ public class Frame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeftButtonActionPerformed
-        
-        if (SuperFunc.start()>=1) {
+
+        if (SuperFunc.Start()>=4) {
             jDialogNight.setVisible(true);
+            
+        
         }
         else {
             HelloWorldDialog.setVisible(true);
+              jHelloLabel2.setText("Число = "+SuperFunc.Start());
         }
     }//GEN-LAST:event_LeftButtonActionPerformed
 /*
