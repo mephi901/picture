@@ -40,6 +40,8 @@ public class Frame extends javax.swing.JFrame {
         CenterButton = new javax.swing.JButton();
         RightButton = new javax.swing.JButton();
 
+        HelloWorldDialog.setBounds(new java.awt.Rectangle(0, 0, 400, 400));
+
         jHelloLabel1.setText("Hello World!");
 
         jHelloLabel2.setText("Число = ");
