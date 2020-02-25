@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author b17-901
  */
 public class Frame extends javax.swing.JFrame {
-
+    double per;
     /**
      * Creates new form Frame
      */
@@ -186,15 +186,15 @@ public class Frame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LeftButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeftButtonActionPerformed
-
-        if (SuperFunc.Start()>=4) {
+        per = SuperFunc.Start();
+        if (per>=4) {
             jDialogNight.setVisible(true);
-            jLabel3.setText("Число = "+SuperFunc.Start());
+            jLabel3.setText("Число = "+per);
         
         }
         else {
             HelloWorldDialog.setVisible(true);
-              jHelloLabel2.setText("Число = "+SuperFunc.Start());
+              jHelloLabel2.setText("Число = "+per);
         }
     }//GEN-LAST:event_LeftButtonActionPerformed
 /*
